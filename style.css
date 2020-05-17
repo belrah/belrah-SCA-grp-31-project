@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(255, 250, 250);
+    color: rgb(15, 15, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin: auto 1.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.p2 {
+    padding: 1rem 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 1.5rem 0.5rem;
+    margin-bottom: 3rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    margin-left: 1.2rem;
+    width: 50px;
+}
+
+.active {
+    color: rgb(226, 6, 79);
+}
+
+nav li:hover {
+    transform: scale(2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+header .header-info {
+    width: 55%;
+    text-align: justify;
+}
+
+header .header-image {
+    width: 45%;
+    padding-left: 3rem;
+}
+
+.btn {
+    width: auto;
+    border-radius: 25px;
+    padding: 0.8rem 1rem;
+    margin: 2rem;
+    font-size: 0.7rem;
+    margin-left: 0;
+}
+
+.btn-red {
+    background: rgb(226, 6, 79);
+    color: rgb(248, 243, 243);
+}
+
+.btn-white {
+    color: rgb(226, 6, 79);
+    border: 2px solid rgb(226, 6, 79);
+}
+
+.btn:hover {
+    transition: all 200ms linear;
+    transform: translateY(-0.2rem);
+}
+
+i {
+    display: inline-block;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(226, 6, 79);
+}
+
+#section1 {
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+hr {
+    width: 5%;
+    margin: 0.3rem auto;
+    margin-bottom: 2rem;
+    border-top: 1.5px solid rgb(226, 6, 79);
+}
+
+#section1 .box1-wrap,
+#section1 .box2-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#section1 .box1-wrap div,
+#section1 .box2-wrap div {
+    width: 33.3%;
+    margin: 0.7rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 10px 1px rgba(200, 200, 200, 0.6);
+}
+
+#section2 h2,
+#section3 h2,
+h1 {
+    margin: 1rem 0;
+}
+
+#section2 {
+    background: rgb(255, 248, 248);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#section2 .section2-info {
+    width: 50%;
+    margin: 2rem;
+    margin-left: 4rem;
+}
+
+#section2 .section2-image {
+    width: 50%;
+    margin: 2rem;
+    margin-right: 4rem;
+}
+
+#section2 img {
+    width: 100%;
+}
+
+#section3 {
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#section3 .box-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
+}
+
+#section3 .box1-wrap,
+#section3 .box2-wrap,
+#section3 .box3-wrap {
+    width: 33.3%;
+}
+
+#section3 .box1-wrap .box,
+#section3 .box3-wrap .box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1rem;
+    box-shadow: 0 1px 10px 1px rgba(200, 200, 200, 0.6);
+    padding: 1rem;
+}
+
+#section3 .box3-wrap .box {
+    flex-direction: row;
+}
+
+#section3 .boxa div {
+    width: 70%;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+#section3 .boxb div {
+    width: 70%;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+#section3 .boxb div,
+i {
+    margin: 0.3rem 0;
+}
+
+#section3 i {
+    padding-right: 2rem;
+}
+
+#section4 {
+    background: rgb(255, 248, 248);
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#section4 .section4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+#section4 .box4-wrap {
+    background: rgb(255, 250, 250);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 10px 1px rgba(200, 200, 200, 0.6);
+    margin-left: 1.8rem;
+}
+
+#section4 .box4-wrap .box-image {
+    width: 30%;
+}
+
+#section4 i.fa-facebook {
+    color: rgb(3, 17, 80);
+}
+
+#section4 i.fa-twitter {
+    color: rgb(7, 148, 184);
+}
+
+#section4 .box4-wrap .box-info {
+    width: 70%;
+    text-align: left;
+    margin: 1rem;
+}
+
+#section5 {
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#section5 .section5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#section5 .box-wrap {
+    width: 33.3%;
+    padding: 1rem 5rem;
+    margin: 0 0.5rem;
+    box-shadow: 0 1px 10px 1px rgba(240, 238, 238, 0.6);
+}
+
+#section5 .box-wrap:nth-child(2) {
+    box-shadow: 0 1px 10px 1px rgba(200, 200, 200, 0.6);
+}
+
+#section5 h3 {
+    margin: 0.5rem 0;
+}
+
+#section5 .p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section5 .i2 {
+    width: 90px;
+    padding: 1rem;
+    background: rgb(226, 6, 79);
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+#section5 .i2 i {
+    color: rgb(255, 250, 250);
+    transform: rotate(180deg);
+    margin-bottom: 1rem;
+}
+
+#section5 .i i {
+    color: rgb(226, 6, 79);
+    margin-top: 1rem;
+}
+
+#section5 .i {
+    width: 90px;
+    padding: 1rem;
+    background: rgb(223, 220, 220);
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+#section6 .section6 {
+    background: rgb(226, 6, 79);
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+#section6 .box1,
+#section6 .box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section6 .box2 {
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+#section6 .box2 div {
+    width: 50%;
+}
+
+#section6 .box-wrap {
+    background: rgb(255, 250, 250);
+    width: 33.3%;
+    padding: 3rem 1rem;
+    margin: 0 0.5rem;
+}
+
+#section6 .box-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+#section6 i.i1 {
+    color: rgb(255, 248, 248);
+    margin-top: 2rem;
+}
+
+#section7 {
+    background: rgb(255, 248, 248);
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+
+#section7 .section7 {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section7 .section7 div {
+    width: 50%;
+}
+
+#section7 .section7 .box2 {
+    align-self: flex-start;
+}
+
+input,
+textarea {
+    display: inline-block;
+    margin: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    width: 47%;
+}
+
+#section7 .subject,
+textarea {
+    width: 97%;
+}
+
+#section1 i,
+#section3 i,
+#section5 i {
+    font-size: 1.5rem;
+}
+
+footer i,
+#section4 i {
+    margin-right: 1rem;
+}
+
+footer i {
+    color: inherit;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem;
+}
+
+footer .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+    border-bottom: 3px solid rgba(240, 238, 238, 0.6);
+}
+
+footer .footer div,
+.footer ul {
+    width: 25%;
+}
+
+footer .footer ul li {
+    margin: 0.5rem 0;
+}
+
+footer .box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer .box2 .p3 {
+    width: 33.3%;
+}
+
+footer .box2 .btn-red {
+    width: auto;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 0.85rem;
+    }
+    nav {
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+    }
+    nav ul {
+        display: none;
+    }
+    header {
+        display: block;
+        padding: 0 2rem;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 7rem;
+    }
+    header img,
+    header .header-image {
+        width: 100%;
+    }
+    header p {
+        text-align: left;
+    }
+    h1 {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .btn {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    hr {
+        display: none;
+    }
+    #section1 {
+        text-align: left;
+        padding: 0 1rem;
+    }
+    #section1 .box1-wrap,
+    #section1 .box2-wrap {
+        display: block;
+        width: 100%;
+    }
+    #section4 .box4-wrap,
+    #section1 .box1-wrap div,
+    #section1 .box2-wrap div {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+    #section2 {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    #section3 .box-wrap .box div,
+    #section2 .section2-info,
+    #section2 .section2-image {
+        margin-left: 1rem;
+        width: 80%;
+        text-align: center;
+    }
+    #section3,
+    #section4,
+    #section5,
+    #section7 {
+        padding: 1rem;
+        text-align: left;
+    }
+    #section3 .box-wrap,
+    #section4 .section4,
+    #section4 .box4-wrap {
+        display: block;
+        text-align: center;
+    }
+    #section7 .section7 div,
+    #section6 .box2 div,
+    #section3 .box1-wrap,
+    #section3 .box2-wrap,
+    #section3 .box3-wrap {
+        width: 90%;
+        margin: auto;
+    }
+    #section3 .box1-wrap .box,
+    #section3 .box3-wrap .box {
+        display: block;
+    }
+    #section6 .box-wrap,
+    #section5 .box-wrap,
+    #section4 .box4-wrap .box-info,
+    #section4 .box4-wrap .box-image {
+        width: 80%;
+        text-align: left;
+    }
+    footer .footer,
+    #section7 .section7,
+    #section6 .box1,
+    #section6 .box2,
+    #section5 .section5 {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+    }
+    #section5 .fa {
+        padding-left: 1rem;
+    }
+    input,
+    textarea {
+        width: 97%;
+    }
+    footer .box2 .p4,
+    footer .footer div,
+    .footer ul {
+        width: 90%;
+    }
+    footer div.p3 {
+        display: none;
+    }
+}
